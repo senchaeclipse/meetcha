@@ -1,6 +1,6 @@
 Ext.define('Meetcha.store.GroupMemberStore', {
 	extend: 'Ext.data.Store',
-	requires: 'Meetcha.model.GroupMember',
+	requires: ['Meetcha.model.GroupMember'],
 	config: {
 		model: 'Meetcha.model.GroupMember',
 		membersURL: serverUrl + 'php/2_members.php?group_id=',

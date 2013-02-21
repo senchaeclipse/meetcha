@@ -1,7 +1,7 @@
 Ext.define('Meetcha.view.MeetupList', {
     extend: 'Meetcha.view.MultiActionList',
     alias: 'widget.meetuplist',
-    requires: 'Ext.plugin.PullRefresh',
+    requires: ['Ext.plugin.PullRefresh'],
     config: {
         emptyText: 'No Meetups found',
         cls: 'meetup-list',

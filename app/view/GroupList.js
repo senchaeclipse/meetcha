@@ -1,7 +1,7 @@
 Ext.define('Meetcha.view.GroupList', {
     extend: 'Meetcha.view.MultiActionList',
     xtype: 'grouplist',
-    requires: 'Ext.plugin.PullRefresh',
+    requires: ['Ext.plugin.PullRefresh'],
     showLeaveGroup: false,
 
     config: {

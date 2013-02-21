@@ -1,6 +1,6 @@
 Ext.define('Meetcha.controller.MeetupList', {
     extend: 'Meetcha.controller.CommonInteractions',
-    requires: 'Meetcha.store.RsvpMemberStore',
+    requires: ['Meetcha.store.RsvpMemberStore'],
     config: {
         refs: {
             'homeScreen': 'homescreen',
