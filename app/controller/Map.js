@@ -28,7 +28,7 @@ Ext.define('Meetcha.controller.Map', {
         var tpl = ['{name}<br/>', '<tpl if="photo_url != null">', '<img src="{photo_url}"/>', '</tpl>'],
             map = this.getMap();
 
-        Ext.Array.insert(tpl, 1, listType == 'meetups' ? '{yes_rsvp_count} attending.<br/>' : '{members} members.<br/>');
+        Ext.Array.insert(tpl, 1, listType == 'meetups' ? ['{yes_rsvp_count} attending.<br/>'] : ['{members} members.<br/>']);
 
         map.setMarkerTemplate(tpl.join(''));
         map.clearMarkers();
