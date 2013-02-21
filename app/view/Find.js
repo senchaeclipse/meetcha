@@ -99,5 +99,5 @@ Ext.define('Meetcha.view.Find', {
             'Location': values.Location[0],
             'Interests': values.Interests ? values.Interests : null
         };
-    },
+    }
 });
